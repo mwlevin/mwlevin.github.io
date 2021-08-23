@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    
+<meta charset="utf-8"/>
+<!-- Set the viewport width to device width for mobile -->
+<meta name="viewport" content="width=device-width"/>
+<title>Michael W. Levin</title>
+<!-- CSS Files-->
+<link rel="stylesheet" href="stylesheets/style.css">
+
+<link rel="stylesheet" href="stylesheets/skins/blue.css">
+<!-- skin color -->
+<link rel="stylesheet" href="stylesheets/responsive.css">
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+<link rel="icon" href="images/favicon1.png"  type="image/png"  />
+</head>
+<body>
+
+ <div class="row">   
+     <div class="twelve columns">
+         <h3>How to write a journal paper</h3>
+         
+         <h5>What is a journal paper?</h5>
+         
+         <p>
+         As researchers, our job is to discover new knowledge. This could take the form of new and improved models or new solution methods for existing problems. Once we make a discovery, we communicate it to others by writing a journal paper. (A journal publication also is a record that we were the ones who made that discovery.) This discovery is known as a contribution to the scientific literature. The purpose of a journal paper is to present the contribution and explain why it is a contribution. 
+         </p>
+         
+         <p>
+Journal papers are peer-reviewed, meaning that other experts on the topic read the paper and gave their opinion on whether it is good enough to merit publications. I will talk more about the peer review process later on.
+         </p>
+         
+         <p>
+Journal papers are usually organized into 5 parts. You can organize them differently, but I recommend using this structure for your first few papers.
+         </p>
+         <ol>
+             <li>Introduction</li>
+<li>Literature review</li>
+<li>Methodology</li>
+<li>Numerical results</li>
+<li>Conclusions</li>
+         </ol>
+         <p>
+Now, I will talk about each section in detail.
+         </p>
+     
+         <h5>Introduction</h5>
+         
+         <p>
+         The introduction is relatively short (~1 page), and introduces the contribution of the paper. That involves answering the following questions, usually in this order:
+         </p>
+         <ol>
+             <li><b>What is the topic of this paper? Why is that topic worth studying?</b> This is usually a fairly general statement that is understandable by a layperson. For instance, the topic might be shared autonomous vehicles, and the reason for studying could be their potential impacts on travel behavior. </li>
+<li><b>What specific problem is this paper addressing?</b> This moves from a specific topic to a specific problem within that topic. For shared autonomous vehicles, a specific problem might be optimizing the matching of vehicles to passengers. This is also where the paper starts to become differentiated from other work. For instance, we could specify that this paper focuses on optimal dispatch of electric shared autonomous vehicles as opposed to non-electric shared autonomous vehicles.</li>
+<li><b>What approach does this paper take?</b> This is usually a brief conceptual summary of the methods, perhaps providing some motivation of why those methods were chosen, which leads into the next question.</li>
+<li><b>What does this paper do differently or better than previous work?</b> A contribution means pushing the boundary of human knowledge. Convincing the reader that this paper provides a contribution means comparing the work in this paper to the boundary of knowledge, usually by citing a few of the most relevant recent papers on the topic to establish the boundary.</li>
+<li><b>What are the contributions of this paper? </b>The reader should (sort of) be able to guess the contributions by this point, but I always find it helpful, especially for peer review, to literally write "The contributions of this paper are X, Y, and Z." That reduces the chance of reviewers complaining that the contributions are unclear.</li>
+<li><b>How is the remainder of this paper organized?</b> This is mostly for ease of reading, and is common for some journals but not for others. If included, this should be fairly short. </li>
+        </ol>
+        
+         <p>
+             I have included the following journal articles. I encourage you to read their introductions and evaluate for yourself how well they address the above questions.</p>
+         
+         <ul class="disc">
+             <li><a href="WritingWorkshop/balac_2019.pdf" target="_blank">Balac et al. (2019)</a></li>
+             <li><a href="WritingWorkshop/qiu_2016.pdf" target="_blank">Qiu et al. (2016)</a></li>
+             <li><a href="WritingWorkshop/du_2019.pdf" target="_blank">Du et al. (2019)</a></li>
+             <li><a href="WritingWorkshop/nguyen_2019.pdf" target="_blank">Nguyen et al. (2019)</a></li>
+             <li><a href="WritingWorkshop/cao_2019.pdf" target="_blank">Cao et al. (2019)</a></li>
+         </ul>
+         
+         
+         <h5>Literature review</h5>
+         
+         <p>
+         The best way of thinking about a literature review is telling a story. How did human knowledge evolve to the point where you are wanting to write this paper? Generally, this involves describes the papers that represented the state of human knowledge at various points in time in the past.
+         </p>
+         
+         <p>
+The main goal of the literature review is to further convince the reader that your contribution is, indeed, a contribution. This is the place to spend time discussing relevant papers and how they differ.
+         </p>
+         
+         <p>
+I usually start by citing the earliest papers that established the problem being studied. You can view the story of knowledge as a tree, with the earliest papers as the root. From those early papers, researchers branched out in multiple directions. One of those branches leads to the paper you are writing. I will usually mention the other branches too, albeit briefly, as part of the story of the literature. Eventually, I arrive at the branch right before this paper. I usually spend some space discussing the most recent relevant papers in detail to explain the differences between those papers and the one I'm writing. That helps establish the contribution.
+         </p>
+         
+         <p>
+​Some authors get into the practice of simply listing relevant papers and giving a 1&#8211;3 sentence description about each of them. While this can work as a literature review, it doesn't flow as well as a story of the literature, and actually takes more time to write.
+         </p>
+         
+         <p>Look at the literature reviews of the below papers. Two of them have literature reviews that are embedded into the introduction. I do not recommend writing this way for your first paper, as it requires much tighter control of the direction of your writing to make it flow, but they are useful examples. Look at how well the literature reviews tell a story of the literature.</p>
+         
+         
+         <ul class="disc">
+             <li><a href="WritingWorkshop/loeb_2018.pdf" target="_blank">Loeb et al. (2018)</a></li>
+             <li><a href="WritingWorkshop/wu_2019.pdf" target="_blank">Wu et al. (2019)</a></li>
+             <li><a href="WritingWorkshop/iacobucci_2019.pdf" target="_blank">Iacobucci et al. (2019)</a></li>
+             <li><a href="WritingWorkshop/lokhandwalla_2019.pdf" target="_blank">Lokhandwalla et al. (2019)</a></li>
+
+         </ul>
+         
+         
+         
+         <h6>How to conduct a literature review</h6>
+
+         <p>
+We've talked about what a literature review should look like, but how do you get started? 
+         </p>
+         
+         <p>
+First, download copies of as many related papers as you can find. Don't read them yet, just download them and store them in one place. The best way to do this is through Google scholar. Search for some keywords, and look through the search results until the papers stop becoming relevant. Then, look at some of the most relevant papers and look at their literature reviews and/or use the "cited by" feature of Google scholar to see which papers cited those. Note that sometimes multiple keywords are used for the same topic, such as "shared autonomous vehicles" and "autonomous mobility-on-demand."
+         </p>
+         
+         <p>
+Now, start looking through these papers to figure out the story of the literature for yourself. Usually, I try to categorize papers by how they approached the problem. Maybe some papers used agent-based simulation for shared autonomous vehicles, which were then extended to agent-based simulations in microsimulators, or agent-based simulation with electric vehicles, or agent-based simulations with ridesharing. Identify these categories, and maybe sketch the tree of the story of the literature. Also figure out which categor(ies) your paper belongs to. Note that categorizing a paper is usually as simple as reading the introduction and conclusions, and maybe skimming the methodology section. You don't have to read any paper in detail yet.
+         </p>
+         
+         <p>
+Now you can start writing the literature review. Start with the earliest papers, and describe branches as you arrive at them. For most branches, you don't need to describe the papers in detail. Just describe the branch and cite the papers you found as examples. 
+         </p>
+         
+         <p>
+When you come to the branch(es) related to your paper, now read the most related papers in more detail. Spend 1-3 sentences describing the previous work and how it differs from yours. 
+         </p>
+         
+         <p>
+At the end of the literature review, you should have told the story of how the literature ended up at your paper, and you are now ready to describe your discovery.
+         </p>
+
+         <h5>Methodology</h5>
+         
+         <p>
+         Most papers involve some methodology. This could be a new engineering model or an extensive mathematical analysis leading to a new solution method. The methodology is usually a key part of the contribution, and this is the section to describe that methodology.
+         </p>
+         
+         <p>
+Some papers simply list equations as a fait accompli and explain their behavior afterwards. As a reader, I usually find this to be quite overwhelming as I am immediately presented with a large amount of mathematics without a clear explanation of its purpose. 
+         </p>
+         
+         <p>
+​Instead, my advice is tell a story of how you discovered the methodology. You probably followed a path through the methodology, starting with a simple model and then discovering its structure in more depth or adding more components to model the complexity of reality. Taking the reader through this path (at a faster pace) is one way to present the methodology clearly.
+         </p>
+         
+         <p>
+Start by defining the problem you are solving in formal, mathematical terms. You probably already defined the problem conceptually in the introduction, but define it formally now. For instance, if writing about a new solution algorithm for traffic assignment, define the static traffic assignment problem and all its notation, then proceed from there. This is also the time to formally define the assumptions you are making and justify them. All methodologies make some assumptions. It is far better to define them and justify them then let reviewers try to infer them and possibly get it wrong or criticize them.
+         </p>
+         
+         <p>
+Define the notation in the text as it becomes relevant. You can include a table of notation in addition if you want, but having to look back to a table of notation breaks the flow of reading. 
+         </p>
+             
+         <p>    
+I usually write a sketch of the methodology as I develop it, in terms of the equations of the model and any analytical properties I discovered. Then I go back and fill in more explanation for readers.
+         </p>
+         
+         <p>
+If the methodology culminates in a complete model, such as a linear program, I will sometimes repeat the equations of the model all together to make it easier for the reader to see the final version.
+         </p>
+         
+         <p>
+Often the most difficult part about writing a paper is to remember what your audience knows. You probably spent 6+ months developing the discovery, and you are writing for people who knew as much as you did, 6+ months ago. Concepts that are now obvious to you will be unclear to them. 
+         </p> 
+     
+         <p>The following papers provide some examples on different ways of writing the methodology. Some papers are clearer than others. </p>
+         
+         
+         <ul class="disc">
+             
+             <li><a href="WritingWorkshop/wu_2019.pdf" target="_blank">Wu et al. (2019)</a></li>
+             <li><a href="WritingWorkshop/mirheli_2019.pdf" target="_blank">Mirheli et al. (2019)</a></li>
+             <li><a href="WritingWorkshop/varaiya_2013.pdf" target="_blank">Varaiya (2013)</a></li>
+
+         </ul>
+         
+         
+         <h5>Numerical results</h5>
+         
+         <p>In some papers, the numerical results serve to demonstrate the contributions made in the methodology section. In other papers, the numerical results are themselves the main contributions. Either way, think about what contributions you want to make, and organize your numerical results section around establishing those contributions. For instance, if you want to claim that you discovered a faster solution algorithm, include results comparing your algorithm to previous work in terms of computation time, memory, and any other metrics you expect differences in. </p>
+         
+         <h5>Conclusions</h5>
+         
+         <p>The purpose of the conclusions are to reiterate a summary of the contributions to the literature. After slogging through the many technical details of the paper, you want readers to be reminded of what you have accomplished here. 
+         </p>
+         
+         <p>
+In addition, your conclusions section should describe the future work that should be done on this topic. Now that you've pushed the boundary of knowledge, where would you like to see it pushed further? This is a good way of encouraging readers (with different expertise) to try to tackle some of the issues you encountered but did not resolve. For instance, you may have made some restrictive assumptions to obtain your results, but maybe a reader would know how to relax those assumptions. 
+         </p>
+         
+         
+         <h5>Abstract</h5>
+         
+         <p>The abstract is a short summary of the paper. Generally, you want to introduce the problem and explain the contributions, all in a limited space. Write this last; after you have written the paper, you can then summarize it. 
+         </p>
+         
+         <h5>Writing tips</h5>
+         <p>
+             Starting a paper from scratch is difficult, and part of that difficulty is because you are trying to write and organize the paper simultaneously. Organization involves knowing where the paper is going. It is often easier to start by writing an outline of the paper, including subsections and possibly even down to the paragraph level. In this outline, make sure you include everything that you need to communicate to the reader. Then you can start filling in the writing of each paragraph, knowing where it leads to and what you want it to contain.
+         </p>
+         
+         <p>
+             Sometimes you will have <q>writer's block</q> and not know where to start. That's ok. Just start writing anything that comes to your mind. You can always go back and reorganize or rewrite it later.
+         </p>
+         
+         <p>
+I also find that activities that break the flow of writing are an unwelcome interruption. These include looking up specific references or equations. Instead, I just leave a placeholder in the text and return to fill it in later.
+         </p>
+     
+     </div>
+ </div>  
+    
+    
+    
+<!-- JAVASCRIPTS 
+================================================== -->
+<!-- Javascript files placed here for faster loading -->
+<script src="javascripts/foundation.min.js"></script>   
+<script src="javascripts/jquery.easing.1.3.js"></script>
+<script src="javascripts/elasticslideshow.js"></script>
+<script src="javascripts/jquery.carouFredSel-6.0.5-packed.js"></script>
+<script src="javascripts/jquery.cycle.js"></script>
+<script src="javascripts/app.js"></script>
+<script src="javascripts/modernizr.foundation.js"></script>
+<script src="javascripts/slidepanel.js"></script>
+<script src="javascripts/scrolltotop.js"></script>
+<script src="javascripts/hoverIntent.js"></script>
+<script src="javascripts/superfish.js"></script>
+<script src="javascripts/responsivemenu.js"></script>
+</body>
+</html>
