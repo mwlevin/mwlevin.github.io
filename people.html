@@ -530,61 +530,141 @@ Applicants should be studying Civil, Industrial, or Computer Engineering, Comput
         <h3 id="photos"> Photos</h3>
     </div>
 </div>
-    
+
+<!-- Slideshow container -->
 
 <div class="row">
-    
-    <p style="margin-bottom:25px;"></p>
-</div>
-    
-      
-<div class="row">
-    <div class="eight columns">
-    <img style="max-width:100%" src="images/groupphotos/te1.jpg">
-    </div>
-    <div class="four columns">
-        <p>Te's first campus visit during the pandemic</p>
-    </div>
-</div>
+    <div class="two columns"></div>
         
-<div class="row">
     <div class="eight columns">
-    <img style="max-width:100%" src="images/groupphotos/trb8720-5095_orig.jpg">
-    </div>
-    <div class="four columns">
-        <p>Rongsheng and I receiving the 2019 <a href="https://its.ucdavis.edu/make-a-gift/kitamura-paper-award/" target="_blank">Ryuichi Kitamura Award</a> at TRB.</p>
-    </div>
-</div>
+    
         
-<div class="row">
-    <div class="eight columns">
-    <img style="max-width:100%" src="images/groupphotos/trb2.jpg">
-    </div>
-    <div class="four columns">
-        <p>At the Network Modeling Committee poster session at TRB 2020.</p>
-    </div>
+        <style>
+div.slideshow-container {
+
+  height: 600px;
+  overflow: hidden; 
+}
+</style>
+        
+<div class="slideshow-container">
+    
+    <div class="mySlides fade">
+        <div class="text">Jake presenting at TRB 2022</div>
+  <img src="images/groupphotos/trb2022-2.jpeg" style="width:100%">
+  </div>
+    
+    
+  <div class="mySlides fade">
+      <div class="text">Shi'an presenting at TRB 2022</div>
+  <img src="images/groupphotos/trb2022-1.jpeg" style="width:100%">
+</div>
+  
+<div class="mySlides fade">
+    <div class="text">Te's first campus visit during the pandemic</div>
+  <img src="images/groupphotos/te1.jpg" style="width:100%">
+  
 </div>
 
-<div class="row">
-    <div class="eight columns">
-    <img style="max-width:100%" src="images/groupphotos/zhexianrongsheng.jpg">
-    </div>
-    <div class="four columns">
-        <p>Zhexian and Rongsheng working hard!</p>
-    </div>
+<div class="mySlides fade">
+    <div class="text">Rongsheng and I receiving the 2019 <a href="https://its.ucdavis.edu/make-a-gift/kitamura-paper-award/" target="_blank">Ryuichi Kitamura Award</a> at TRB.</div>
+
+  <img src="images/groupphotos/trb8720-5095_orig.jpg" style="width:100%">
+  </div>
+
+<div class="mySlides fade">
+    <div class="text">At the Network Modeling Committee poster session at TRB 2020.</div>
+  <img src="images/groupphotos/trb2.jpg" style="width:100%">
+  
 </div>
-        
     
-        
-<div class="row">
-    <div class="eight columns">
-    <img style="max-width:100%" src="images/groupphotos/zhexian-itsc_orig.png">
-    </div>
-    <div class="four columns">
-        <p>Zhexian presenting at ITSC 2019 in Auckland</p>
-    </div>
+<div class="mySlides fade">
+    <div class="text">Zhexian and Rongsheng working hard!</div>
+  <img src="images/groupphotos/zhexianrongsheng.jpg" style="width:100%">
+  
 </div>
-        
+    
+<div class="mySlides fade">
+    <div class="text">Zhexian presenting at ITSC 2019 in Auckland</div>
+  <img src="images/groupphotos/zhexian-itsc_orig.png" style="width:100%">
+  
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+
+
+<script>
+var slideIndex = 1;
+var delay = 0;
+showSlides();
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+  delay = 5000;
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    
+
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+function showSlides() {
+    
+    
+    if(delay > 0)
+  {
+      delay = 0;
+  }
+  else
+  {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    var temp = delay;
+    delay = 0;
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
+  }
+}
+</script>
+
+
+
+</div>
+    
+    <div class="two columns"></div>
+</div>
+
+
+    
 
 
         
